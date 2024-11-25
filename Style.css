@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+#form-registro {
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#encabezado {
+    display: flex;
+}
+
+#encabezado #contenedor #links-nav #lista-nav a h3 {
+    margin: 10px;
+    font-size: 20px;
+    width: 110%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #3333331a;
+    border-radius: 10px;
+    color: #000000;
+    transition: all ease-in-out 0.7s;
+}
+#encabezado #contenedor #links-nav #lista-nav a #en-vivo:hover {
+    background: #9d0208 !important;
+    border-radius: 10px !important;
+    color: #fbf8f9 !important;
+}
+#encabezado #contenedor #links-nav #lista-nav a h3:hover{
+    background: #000000;
+    border-radius: 10px;
+    color: #fbf8f9;
+}
+
+#en-vivo {
+    color: #ffffff !important;
+    background: #D52531 !important;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carrusel2{
+margin-left: 30%;
+    width: 500px;
+    text-align: center;
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 100px;
+    padding: 20px 60px 10px;
+}
+
+#logo {
+    width: 190px;
+    margin-top: -20px;
+}
+
+#links-nav {
+    display: flex;
+    align-items: center;
+}
+
+#lista-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+ul li {
+    margin-right: 60px;
+}
+
+#lista-nav li a {
+    text-decoration: none;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+}
+
+/* .carrusel{
+    margin: 10px 0 200px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carrusel img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all ease-in-out 0.5s;
+}
+
+.carrusel img:hover {
+    width: 30%;
+
+} */
+
+#carrusel {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    /* gap: 10px; */
+}
+
+#carrusel img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: all ease-in-out 0.7s;
+    /* border-radius: 10px;
+    border: 2px solid #fff3bd */
+}
+
+#carrusel img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#intro {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#intro img {
+    width: 700px;
+    max-width: 1200px;
+}
+
+#carouselExampleFade .carousel-inner .carousel-item img{
+    width: 100px;
+}
+
+#quienes-somos {
+    text-align: left;
+    margin-top: 100px;
+}
+
+#quienes-somos h1 {
+    margin-left: 20px;
+}
+
+#quienes-somos p {
+    line-height: 2;
+    margin-left: 20px;
+}
+
+/* CSS de los planes */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 100px;
+    padding: 20px 60px 10px;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    list-style: armenian;
+}
+
+
+
+#titulo-planes {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #d52530;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: white;
+    border: 7px solid #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 400px;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.plan h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0d6efd;
+}
+
+.plan .precio {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.plan ul li {
+    margin-bottom: 0.5rem;
+    margin: 1ch;  
+}
+
+.plan button { 
+    background: #d52530; 
+    font-family: inherit; 
+    padding: 0.6em 1.9em; 
+    font-weight: 900; 
+    font-size: 18px; 
+    border: 3px solid rgb(0, 0, 0); 
+    border-radius: 0.4em; 
+    box-shadow: 0.1em 0.1em; 
+    cursor: pointer; 
+}
+
+.boton-cont {
+    display: flex; 
+    justify-content: center; 
+    margin-top: auto;
+}
+
+.plan button:hover{
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   
+}
+
+.plan button:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.popular {
+    border: 7px solid #9d0208;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 290px;
+    margin-top: -8px;
+}
+
+/* Footer */
+#logoGym{
+    text-align: center;
+    height: 200px;
+    margin-top: -30px;
+}
+
+.footer {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 5rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .social-media {
+    margin-bottom: 1rem;
+}
+
+.footer .social-media p {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-top: -30px;
+}
+
+.footer .social-media a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.footer .social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+    margin-top: 20px;
+}
+
+.footer .social-media img:hover {
+    transform: scale(1.1);
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+
+/* Formulario */ 
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 100px;
+    padding: 20px 60px 10px;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    list-style: armenian;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .form_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: auto;
+    width: auto;
+    border: 2px solid #264143;
+    border-radius: 20px;
+    box-shadow: 3px 4px 0px 1px #9d0208;
+  }
+  
+  .title {
+    color: #264143;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  .sub_title {
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10px;
+  }
+  
+  .form_style {
+    outline: none;
+    border: 2px solid #264143;
+    box-shadow: 3px 4px 0px 1px #D52531;
+    width: 290px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  
+  .form_style:focus, .btn:focus {
+    transform: translateY(4px);
+    box-shadow: 1px 2px 0px 0px #D52531;
+  }
+  
+  .btn {
+    padding: 15px;
+    margin: 25px 0px;
+    width: 290px;
+    font-size: 15px;
+    background: #D52531;
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 3px 3px 0px 0px #d52530;
+  }
+  
+  .btn:hover {
+    opacity: .9;
+  }
+  
+  .link {
+    font-weight: 800;
+    color: #264143;
+    padding: 5px;
+  }
+
+/*Reseñas */
+.op-titulo {
+    text-align: center;
+}
+.opiniones {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cont-reseñas {
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.reseña {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #D52531;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
