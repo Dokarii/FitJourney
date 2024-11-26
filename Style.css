@@ -196,8 +196,6 @@ h3 {
     list-style: armenian;
 }
 
-
-
 #titulo-planes {
     text-align: center;
     margin-top: 50px;
@@ -358,8 +356,6 @@ h3 {
     margin: 0;
 }
 
-
-
 /* Formulario */ 
 .header{
     display: flex;
@@ -439,15 +435,15 @@ h3 {
     box-shadow: 3px 3px 0px 0px #d52530;
   }
   
-  .btn:hover {
-    opacity: .9;
-  }
+.btn:hover {
+   opacity: .9;
+}
   
-  .link {
+.link {
     font-weight: 800;
     color: #264143;
     padding: 5px;
-  }
+}
 
 /*Reseñas */
 .op-titulo {
@@ -476,8 +472,6 @@ h3 {
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
-
 
 p {
     display: block;
